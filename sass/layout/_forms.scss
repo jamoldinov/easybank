@@ -1,0 +1,210 @@
+.main {
+  flex-grow: 1;
+}
+
+// section hero start
+.hero {
+  background-color: #f2f2f2;
+  background-image: url("../../images/png/hero-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 17rem;
+  padding-bottom: 17.8rem;
+  @include responsive(tablet) {
+    top: 0;
+    padding-bottom: 5rem;
+    background-position: top right;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../images/svg/hero__phone.svg");
+    background-position: right top -8rem;
+    background-repeat: no-repeat;
+    width: 899px;
+    height: 828px;
+    @include responsive(tablet) {
+      top: 0;
+    }
+  }
+}
+.hero__container {
+  padding: 0;
+  display: flex;
+
+  @include responsive(tablet) {
+    margin-top: 100rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+.hero__info {
+  max-width: 44.7rem;
+}
+.info__title {
+  font-weight: 100;
+  font-size: 5.6rem;
+  line-height: 1.14;
+  letter-spacing: -1px;
+  color: #2d314d;
+  max-width: 39.4rem;
+  margin-bottom: 2.4rem;
+}
+.info__text {
+  font-size: 1.8rem;
+  line-height: 1.56;
+  letter-spacing: -0.28125px;
+  color: #9597a5;
+  max-width: 44.7rem;
+  margin-bottom: 3.6rem;
+}
+.nav__btn-link-one {
+  margin: 0;
+}
+
+// section hero end
+
+// section promo start
+
+.promo {
+  background-color: #f4f5f7;
+  padding-top: 9.6rem;
+  padding-bottom: 9.4rem;
+}
+.promo__title {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: -0.714286px;
+  color: #2d314d;
+  max-width: 41.1rem;
+  @include responsive(phone) {
+    // margin-top: 5rem;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.571429px;
+    text-align: center;
+  }
+}
+.promo__text {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: -0.28125px;
+  max-width: 62.5rem;
+  color: #9597a5;
+  padding-bottom: 7.2rem;
+  @include responsive(phone) {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.234375px;
+    color: #9597a5;
+    text-align: center;
+  }
+}
+.promo__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  place-items: center;
+  grid-column-gap: 3.2rem;
+  grid-row-gap: 3rem;
+}
+.promo__item:not(:last-child) {
+  margin-right: 3rem;
+}
+.imagev {
+  border-radius: 70%;
+}
+.promo__item {
+  width: 25.5rem;
+}
+.promo__item-img {
+  padding: 1.6rem;
+  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+  border: 1px solid #30c88f;
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+}
+.promo__item-title {
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.428571px;
+  color: #2d314d;
+}
+.promo__item-text {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: -0.25px;
+  color: #9597a5;
+}
+
+// section promo end
+
+//  section feature  start
+.feature {
+  background-color: #f2f2f2;
+  padding-top: 8rem;
+}
+.feature__title {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: -0.714286px;
+  color: #2d314d;
+  @include responsive(phone) {
+    text-align: center;
+  }
+}
+.feature__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  place-items: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 24px;
+  // display: flex;
+  // justify-content: space-between;
+  // width: 25.5rem;
+  // height: 29.5rem;
+  margin-bottom: 10.4rem;
+}
+.feature__list:not(:last-child) {
+  margin-right: 3rem;
+}
+.feature__item {
+  background-color: #fff;
+  width: 25.5rem;
+}
+
+.feature__title-one {
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: -0.15625px;
+  color: #9597a5;
+}
+.feature__title-two {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.285714px;
+  color: #2d314d;
+  width: 20.7rem;
+  padding-top: 8px;
+}
+.feature__text {
+  font-size: 13px;
+  line-height: 1.38;
+  letter-spacing: -0.203125px;
+  color: #9597a5;
+  width: 20.7rem;
+  padding-top: 8px;
+}
+.oval {
+  padding: 2.4rem;
+}
+
+//  section feature end

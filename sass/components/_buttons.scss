@@ -1,0 +1,18 @@
+.site__btn {
+  display: inline-block;
+  background: $background-liner;
+  @include fontStyle(1.4rem, 2, 500, normal, $white-color);
+  border-radius: 22px;
+  padding: {
+    top: 0.8rem;
+    bottom: 0.8rem;
+    left: 3.3rem;
+    right: 3.6rem;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}

@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// *:focus {
+//   outline: 2px dotted $primary-color;
+//   outline-offset: 3px;
+// }
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: flex;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $body-bg;
+  font-family: "Public Sans";
+}
+// h1,h2,h3,h4,h5,h6, p{
+//   margin: 0;
+// }
+.container {
+  width: 100%;
+  max-width: 117rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 3rem;
+  padding-right: 3rem;
+}

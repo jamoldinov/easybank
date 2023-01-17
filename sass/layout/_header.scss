@@ -1,0 +1,97 @@
+.header {
+  background-color: #fff;
+  padding: 1.8rem 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__toggle-btn {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  display: none;
+  @include responsive(tablet) {
+    display: block;
+  }
+}
+.header__toggle-btn__img {
+}
+
+.header__inner {
+  background-color:#f00;
+  border: 0;
+  display: block;
+  margin-bottom: 4rem;
+  display: none;
+
+}
+.header__inner-img {
+}
+.header__link {
+  // margin-right: 25rem;
+}
+.header__link:active {
+  opacity: 0.5;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  @include responsive(tablet) {
+    display: none;
+
+  }
+  @include responsive(tablet) {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30rem;
+    flex-direction: column;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    align-items: center;
+    transform: translateX(100%);
+
+  }
+}
+.navbar.show-nav{
+  @include responsive (tablet){
+    transform: translateX(0%);
+  }
+}
+.nav__list {
+  display: flex;
+  @include responsive(tablet) {
+   
+    flex-direction: column;
+  }
+}
+
+.nav__link {
+  color: $main-text-color;
+}
+.nav__item{
+  @include responsive(tablet) {
+    margin-bottom: 2.4rem;
+  }
+}
+.nav__item:not(:last-child) {
+  margin-right: 3rem;
+ 
+}
+.nav__link:active {
+  color: $secondary-color;
+}
+.nav__btn-link {
+  margin-left: 22.6rem;
+  @include responsive(tablet) {
+    margin-left: 3rem;
+  }
+}
+.nav__btn-link:active {
+  opacity: 0.5;
+}
